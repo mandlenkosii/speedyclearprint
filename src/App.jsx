@@ -1,25 +1,26 @@
 import Button from "./components/ui/Button";
+import Container from "./components/ui/Container";
+import SectionHeading from "./components/ui/SectionHeading";
 
 function App() {
   return (
-    <main className="min-h-screen bg-[var(--paper)]">
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center gap-6 px-6">
-        <h1 className="text-center text-6xl font-semibold">
-          Speedyclearprint
-        </h1>
+    <main className="min-h-screen bg-[var(--paper)] py-24">
+      <Container>
+        <SectionHeading
+          eyebrow="Welcome"
+          title="Quality printing, when deadlines loom."
+          description="Professional litho, digital, promotional and apparel printing for businesses across Johannesburg."
+          align="center"
+        />
 
-        <p className="max-w-xl text-center text-lg text-[var(--ink-light)]">
-          Professional printing solutions for businesses and individuals.
-        </p>
-
-        <div className="flex gap-4">
-          <Button>Get a Quote</Button>
+        <div className="mt-10 flex justify-center gap-4">
+          <Button>Request a Quote</Button>
 
           <Button variant="outline">
             Call Us
           </Button>
         </div>
-      </div>
+      </Container>
     </main>
   );
 }
