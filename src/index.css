@@ -78,3 +78,25 @@ h6 {
   background: var(--primary);
   color: white;
 }
+
+/* ===========================
+   Ticker Animation
+=========================== */
+
+@keyframes ticker {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-track {
+  animation: ticker 25s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
