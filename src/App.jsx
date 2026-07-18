@@ -5,6 +5,7 @@ import About from "./components/sections/About";
 import Services from "./components/sections/Services";
 import Capabilities from "./components/sections/Capabilities";
 import Values from "./components/sections/Values";
+import Clients from "./components/sections/Clients";
 
 function App() {
   return (
@@ -18,8 +19,12 @@ function App() {
       <About />
 
       <Services />
+
       <Capabilities />
+
       <Values />
+
+      <Clients />
     </>
   );
 }
