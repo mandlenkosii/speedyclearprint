@@ -7,6 +7,7 @@ import Capabilities from "./components/sections/Capabilities";
 import Values from "./components/sections/Values";
 import Clients from "./components/sections/Clients";
 import Contact from "./components/sections/Contact";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
       <Clients />
 
       <Contact />
+
+      <Footer />
     </>
   );
 }
