@@ -6,6 +6,7 @@ import Services from "./components/sections/Services";
 import Capabilities from "./components/sections/Capabilities";
 import Values from "./components/sections/Values";
 import Clients from "./components/sections/Clients";
+import Contact from "./components/sections/Contact";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Values />
 
       <Clients />
+
+      <Contact />
     </>
   );
 }
