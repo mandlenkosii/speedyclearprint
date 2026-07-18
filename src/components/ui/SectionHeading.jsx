@@ -3,6 +3,7 @@ function SectionHeading({
   title,
   description,
   align = "left",
+  light = false,
 }) {
   const alignment =
     align === "center"
@@ -17,12 +18,22 @@ function SectionHeading({
         </p>
       )}
 
-      <h2 className="text-4xl font-semibold leading-tight md:text-5xl">
+      <h2
+        className={`text-4xl font-semibold leading-tight md:text-5xl ${
+          light ? "text-white" : "text-[var(--ink)]"
+        }`}
+      >
         {title}
       </h2>
 
       {description && (
-        <p className="mt-5 text-lg leading-8 text-[var(--ink-light)]">
+        <p
+          className={`mt-5 text-lg leading-8 ${
+            light
+              ? "text-gray-300"
+              : "text-[var(--ink-light)]"
+          }`}
+        >
           {description}
         </p>
       )}
