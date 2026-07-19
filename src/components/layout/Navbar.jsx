@@ -6,15 +6,17 @@ import NavLinks from "./NavLinks";
 
 function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--paper)]/90 backdrop-blur-md">
-      <Container className="flex h-20 items-center justify-between">
+    <header className="sticky top-0 z-50 border-b border-[var(--border)]/60 bg-[var(--paper)]/85 backdrop-blur-xl">
+      <Container className="flex h-24 items-center justify-between">
+        <div className = "mr-8">
         <Logo />
+        </div>
 
-        <div className="hidden lg:block">
+        <div className="hidden flex-1 justify-center lg:flex">
           <NavLinks />
         </div>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center lg:flex">
           <Button href="#contact">
             Get a Quote
           </Button>
