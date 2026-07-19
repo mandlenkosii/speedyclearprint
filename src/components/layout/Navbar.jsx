@@ -16,7 +16,7 @@ function Navbar() {
           <NavLinks />
         </div>
 
-        <div className="hidden items-center lg:flex">
+        <div className="hidden flex-shrink-0 items-center lg:flex">
           <Button href="#contact">
             Get a Quote
           </Button>

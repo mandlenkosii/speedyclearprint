@@ -2,7 +2,7 @@ import navigation from "../../data/navigation";
 
 function NavLinks({ onClick }) {
   return (
-    <nav className="flex items-center gap-10">
+    <nav className="flex items-center gap-8 xl:gap-10">
       {navigation.map((item) => (
        <a
         key={item.label}
